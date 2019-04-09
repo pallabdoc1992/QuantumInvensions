@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="WebSuite">
+	<test thread-count="5" name="QuantumInvensions">
+		<classes>
+			<class name= "com.qa.tests.Test1"/>
+			<class name= "com.qa.tests.Test2"/>
+			<class name= "com.qa.tests.Test3"/>
+			<class name= "com.qa.tests.Test4"/>
+			<class name= "com.qa.tests.Test5"/>
+		</classes>
+	</test> <!-- QuantumInvensions -->
+</suite> <!-- WebSuite -->

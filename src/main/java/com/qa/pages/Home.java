@@ -1,5 +1,7 @@
 package com.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +10,9 @@ import org.testng.Assert;
 import com.qa.base.TestBase;
 import com.qa.data.DataProvider;
 
+
 public class Home extends TestBase{
+	
 		
 	@FindBy (xpath = "//title")
 	WebElement txtTitle;
@@ -26,10 +30,11 @@ public class Home extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void searchGoogle(DataProvider dp) {
+	public void searchGoogle(DataProvider dp, String TestCaseName) {
 		
 		Assert.assertEquals(imgLogo.isDisplayed(), true);
-		txtSearchBox.sendKeys(dp.getData("test", "Search"));
+		txtSearchBox.sendKeys(dp.getData(TestCaseName, "Search"));
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 		btnSearch.click();
 		
 		try {

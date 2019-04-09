@@ -1,7 +1,7 @@
 package com.qa.ignition;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
@@ -12,7 +12,7 @@ public abstract class TestCase extends TestBase{
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeClass
 	public void Start(){
 		TestBase.initDriver();
 	}
@@ -21,7 +21,7 @@ public abstract class TestCase extends TestBase{
 	public abstract void Test();
 
 	
-	@AfterTest
+	@AfterClass
 	public void End(){
 		driver.close();
 	}

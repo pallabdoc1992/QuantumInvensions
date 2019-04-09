@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.tests.test">
         <methods>
-          <include name="setUp"/>
-          <include name="Run"/>
-          <include name="tearDown"/>
+          <include name="Test"/>
+          <include name="Start"/>
+          <include name="End"/>
         </methods>
       </class> <!-- com.qa.tests.test -->
     </classes>
