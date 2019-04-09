@@ -10,10 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public abstract class TestBase {
+import com.qa.data.DataProvider;
+
+public class TestBase {
 	
 	public static Properties prop;
 	public static WebDriver driver;
+	public static DataProvider dp;
 	
 	public TestBase() {
 
@@ -27,6 +30,8 @@ public abstract class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		dp = new DataProvider();
 
 	}
 	

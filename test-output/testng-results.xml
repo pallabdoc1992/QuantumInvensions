@@ -2,21 +2,60 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-08T21:29:04Z" name="Default suite" finished-at="2019-04-08T21:29:41Z" duration-ms="36649">
+  <suite started-at="2019-04-09T19:44:51Z" name="Default suite" finished-at="2019-04-09T19:45:37Z" duration-ms="45373">
     <groups>
     </groups>
-    <test started-at="2019-04-08T21:29:04Z" name="Default test" finished-at="2019-04-08T21:29:41Z" duration-ms="36649">
+    <test started-at="2019-04-09T19:44:51Z" name="Default test" finished-at="2019-04-09T19:45:37Z" duration-ms="45373">
       <class name="com.qa.tests.test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.test@24c22fe]" started-at="2019-04-09T02:59:04Z" name="setUp" finished-at="2019-04-09T02:59:39Z" duration-ms="34414" status="PASS">
+        <test-method is-config="true" signature="Start()[pri:0, instance:com.qa.tests.test@2fc6f97f]" started-at="2019-04-10T01:14:51Z" name="Start" finished-at="2019-04-10T01:15:32Z" duration-ms="41052" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Run()[pri:0, instance:com.qa.tests.test@24c22fe]" started-at="2019-04-09T02:59:39Z" name="Run" finished-at="2019-04-09T02:59:39Z" duration-ms="10" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- Start -->
+        <test-method signature="Test()[pri:0, instance:com.qa.tests.test@2fc6f97f]" started-at="2019-04-10T01:15:32Z" name="Test" finished-at="2019-04-10T01:15:34Z" duration-ms="1886" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <input value="Google Search" aria-label="Google Search" name="btnK" type="submit"> is not clickable at point (596, 411). Other element would receive the click: <span>...</span>
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PALLABDOCUMENTS', ip: '192.168.0.3', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\PALLAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52515}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 16b18c312a7e1bc3d37287c2d1f8541c]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.qa.data.DataProvider.getData(DataProvider.java:41)
-	at com.qa.tests.test.Run(test.java:27)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input value="Google Search" aria-label="Google Search" name="btnK" type="submit"> is not clickable at point (596, 411). Other element would receive the click: <span>...</span>
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PALLABDOCUMENTS', ip: '192.168.0.3', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\PALLAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52515}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 16b18c312a7e1bc3d37287c2d1f8541c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.qa.pages.Home.searchGoogle(Home.java:33)
+	at com.qa.tests.test.Test(test.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,14 +82,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Run -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.test@24c22fe]" started-at="2019-04-09T02:59:39Z" name="tearDown" finished-at="2019-04-09T02:59:41Z" duration-ms="2188" status="PASS">
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="End()[pri:0, instance:com.qa.tests.test@2fc6f97f]" started-at="2019-04-10T01:15:34Z" name="End" finished-at="2019-04-10T01:15:37Z" duration-ms="2410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- End -->
       </class> <!-- com.qa.tests.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

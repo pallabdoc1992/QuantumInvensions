@@ -9,9 +9,7 @@ import com.qa.base.TestBase;
 import com.qa.data.DataProvider;
 
 public class Home extends TestBase{
-	
-	DataProvider dp = new DataProvider();
-	
+		
 	@FindBy (xpath = "//title")
 	WebElement txtTitle;
 	
@@ -28,17 +26,16 @@ public class Home extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void searchGoogle(String searchValue) {
+	public void searchGoogle(DataProvider dp) {
 		
-		Assert.assertEquals("Google", txtTitle.getText());
-		Assert.assertEquals(true, imgLogo.isDisplayed());
-		txtSearchBox.sendKeys(searchValue);
+		Assert.assertEquals(imgLogo.isDisplayed(), true);
+		txtSearchBox.sendKeys(dp.getData("test", "Search"));
 		btnSearch.click();
 		
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

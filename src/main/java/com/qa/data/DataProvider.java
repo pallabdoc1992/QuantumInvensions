@@ -8,9 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.qa.base.TestBase;
-
-public class DataProvider extends TestBase {
+public class DataProvider  {
 	
 	FileInputStream input;
     XSSFWorkbook wb;
