@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataProvider  {
+public class DataProvider {
 	
 	FileInputStream input;
     XSSFWorkbook wb;
@@ -23,7 +23,7 @@ public class DataProvider  {
 		try {
 			
 			//File file = new File(System.getProperty("user.dir")+prop.getProperty("testfile_path"));
-			File file = new File("C:\\Users\\PallabDocuments16\\Workspace\\QuantumInvensions\\src\\DataSheet.xlsx");
+			File file = new File("./src/DataSheet.xlsx");
 			input = new FileInputStream(file);
 			wb = new XSSFWorkbook(input);
 		
@@ -63,6 +63,7 @@ public class DataProvider  {
 					return data;
 								
 			}
+
 		
 	}
 

@@ -44,7 +44,7 @@ public class TestBase {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.get(prop.getProperty("url"));
+			//driver.get(prop.getProperty("url"));
 			
 		}else if (prop.getProperty("browser").equalsIgnoreCase("FireFox")) {
 			
@@ -52,7 +52,7 @@ public class TestBase {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.get(prop.getProperty("url"));
+			//driver.get(prop.getProperty("url"));
 			
 		}
 		

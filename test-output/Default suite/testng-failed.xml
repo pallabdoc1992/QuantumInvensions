@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.test">
+      <class name="com.qa.tests.Test5">
         <methods>
           <include name="Test"/>
           <include name="Start"/>
           <include name="End"/>
         </methods>
-      </class> <!-- com.qa.tests.test -->
+      </class> <!-- com.qa.tests.Test5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

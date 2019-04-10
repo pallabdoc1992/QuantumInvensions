@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [WebSuite]">
-  <test name="QuantumInvensions(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.Test4">
-        <methods>
-          <include name="Test"/>
-          <include name="Start"/>
-          <include name="End"/>
-        </methods>
-      </class> <!-- com.qa.tests.Test4 -->
-      <class name="com.qa.tests.Test2">
-        <methods>
-          <include name="Test"/>
-          <include name="Start"/>
-          <include name="End"/>
-        </methods>
-      </class> <!-- com.qa.tests.Test2 -->
-      <class name="com.qa.tests.Test3">
-        <methods>
-          <include name="Test"/>
-          <include name="Start"/>
-          <include name="End"/>
-        </methods>
-      </class> <!-- com.qa.tests.Test3 -->
-      <class name="com.qa.tests.Test1">
-        <methods>
-          <include name="Start"/>
-          <include name="End"/>
-        </methods>
-      </class> <!-- com.qa.tests.Test1 -->
       <class name="com.qa.tests.Test5">
         <methods>
+          <include name="Test"/>
           <include name="Start"/>
           <include name="End"/>
         </methods>
       </class> <!-- com.qa.tests.Test5 -->
     </classes>
-  </test> <!-- QuantumInvensions(failed) -->
-</suite> <!-- Failed suite [WebSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
